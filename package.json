@@ -1,0 +1,9 @@
+{
+  "name": "habitrack",
+  "version": "1.0.0",
+  "description": "HabiTrack - Registro de Hábitos Diarios (lógica + tests)",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/habits.test.js"
+  }
+}

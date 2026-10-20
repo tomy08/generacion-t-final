@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HabiTrack — Hábitos Diarios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 min-h-screen">
+  <main class="max-w-md mx-auto px-4 py-6">
+    <header class="mb-4">
+      <h1 class="text-2xl font-bold">🔥 HabiTrack</h1>
+      <p class="text-sm text-slate-600">Marcá tus hábitos en menos de 1 minuto.</p>
+    </header>
+
+    <form id="habit-form" class="flex gap-2 mb-4">
+      <input id="habit-input" type="text" maxlength="100" placeholder="Ej: Leer 10 páginas"
+        class="flex-1 min-h-[48px] rounded-xl border px-4 text-base" />
+      <button type="submit" class="min-h-[48px] min-w-[48px] px-4 rounded-xl bg-black text-white text-base font-semibold">+</button>
+    </form>
+    <p id="form-error" class="hidden text-sm text-red-600 mb-3">Escribí un nombre para el hábito.</p>
+
+    <ul id="habit-list" class="space-y-2"></ul>
+    <p id="empty" class="text-center text-slate-500 text-sm mt-8">Sin hábitos todavía. Agregá el primero 👆</p>
+  </main>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
